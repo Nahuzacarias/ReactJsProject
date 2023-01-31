@@ -1,14 +1,14 @@
 import './App.css';
-import Barradetareas from './Components/NavBar'
+import Barradetareas from "./Components/NavBar/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Greeting from "./Components/itemlistcontainer"
+import Itemlistcontainer from "./Components/Itemlistcontainer/Itemlistcontainer"
 
 
 function App() {
   return (
     <div className="App">
       <Barradetareas/>
-      <Greeting/>
+      <Itemlistcontainer Greeting="Bienvenido a mi Tienda!"/>
     </div>
   );
 }

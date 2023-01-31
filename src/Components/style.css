@@ -13,3 +13,10 @@ margin-left: 5rem;
 .carrito{
 padding-right: 3rem;
 }
+
+.cero {
+    display: flex;
+    display: inline-block;
+    color: rgba(128, 13, 236, 0.842);
+
+}

@@ -3,15 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import './style.css';
-import "../assets/logo.png"
-import Cart from "./cartwidget"
+import '../style.css';
+import Cartwidget from "../Cartwidget/Cartwidget"
 
 function Barradetareas() {
     return (
         <Navbar className="color1" expand="lg">
             <img
-                    src={require('../assets/logo.png')}
+                    src={require('../../assets/logo.png')}
                     className="d-inline-block align-top logo"
                     alt="logo de dips"/>
             <Container>
@@ -37,7 +36,7 @@ function Barradetareas() {
                     
                 </Navbar.Collapse>
             </Container>
-            <Cart/>
+            <Cartwidget/>
         </Navbar>
     );
 }
