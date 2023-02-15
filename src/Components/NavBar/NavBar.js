@@ -5,9 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../style.css';
 import Cartwidget from "../Cartwidget/Cartwidget"
+import { Link } from "react-router-dom"
 
 function Barradetareas() {
-    return (
+    return ( 
         <Navbar className="color1" expand="lg">
             <img
                     src={require('../../assets/logo.png')}
@@ -17,8 +18,8 @@ function Barradetareas() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">INICIO</Nav.Link>
-                        <Nav.Link href="#link">COMO COMPRAR</Nav.Link>
+                    <Link to="/inicio" ClassName="LinK"  >INICIO</Link>
+                        <Link to="/about" ClassName="LinK"  >ACERCA DE NOSOTROS</Link>
                         <NavDropdown title="CATEGORÍAS" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">AROS</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.1">DIJES</NavDropdown.Item>
@@ -31,7 +32,7 @@ function Barradetareas() {
                                 REGALERÍA
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#home">CONTACTO</Nav.Link>
+                        <Link to="/contact" >CONTACTO</Link>
                     </Nav>
                     
                 </Navbar.Collapse>
