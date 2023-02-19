@@ -1,15 +1,15 @@
+import React , { useEffect} from 'react';
 
+const Itemlistcontainer = () => {
 
-const Itemlistcontainer = ({Greeting}) => {
+        useEffect(() => {
+            fetch(`../../productos.js`)
+                .then((response) => response.json())
+                .then((json) => console.log(json));
+    
+        })
 
-    return (
-
-        <div>
-            <p>{Greeting}</p>
-        </div>
-
-    )
-
+    
 }
 
 export default Itemlistcontainer

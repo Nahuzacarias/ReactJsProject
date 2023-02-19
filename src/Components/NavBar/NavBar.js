@@ -10,10 +10,12 @@ import { Link } from "react-router-dom"
 function Barradetareas() {
     return ( 
         <Navbar className="color1" expand="lg">
+            <Link to="/inicio">
             <img
-                    src={require('../../assets/logo.png')}
+                    src={require('../../assets/logo.png')} 
+                    
                     className="d-inline-block align-top logo"
-                    alt="logo de dips"/>
+                    alt="logo de dips"/></Link>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

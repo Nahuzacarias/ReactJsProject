@@ -14,10 +14,9 @@ const App = () => {
       <div className="App">
 
         <Barradetareas />
-        <Itemlistcontainer Greeting="Bienvenido a mi Tienda!" />
+        <Itemlistcontainer/>
         <Routes>
 
-        
         <Route path='/about' element={<About />} />
         <Route path='/inicio' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
