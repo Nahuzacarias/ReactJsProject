@@ -1,15 +1,24 @@
-import React , { useEffect} from 'react';
+import { useEffect } from 'react';
+import productos from "../../productos.json"
 
-const Itemlistcontainer = () => {
+const Itemlistcontainer = () => { 
+
 
         useEffect(() => {
-            fetch(`../../productos.js`)
-                .then((response) => response.json())
-                .then((json) => console.log(json));
-    
-        })
+                new Promise((resolve, reject) => {
 
-    
-}
+                        setTimeout(() => {
 
-export default Itemlistcontainer
+
+                                resolve(productos);
+                        }, 500);
+
+                }).then((data) => {
+                        console.log(data);
+                });
+        }, []);
+};
+
+
+
+export default Itemlistcontainer;
