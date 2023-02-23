@@ -7,7 +7,6 @@ import Home from "./Components/Pages/Home/Home"
 import Contact from "./Components/Pages/Contact/Contact"
 import About from "./Components/Pages/About/About"
 import CharacterDetail from './Components/Pages/CharacterDetail/CharacterDetail';
-import productos from './Components/productos/productos';
 
 const App = () => {
   return (
@@ -18,14 +17,7 @@ const App = () => {
         <Itemlistcontainer/>
 
 
-        {
 
-productos.map((prod) => (
-  <productos id={prod.id} nombre={prod.nombre} precio={prod.precio} foto={prod.foto} descripcion= {prod.descripcion} />
-  
-  ))
-
-}
         <Routes>
 
         <Route path='/about' element={<About />} />
