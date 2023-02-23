@@ -1,35 +1,35 @@
 [
 {
     "id": 1,
-    "Nombre": "Zinnia enana rosa",
+    "nombre": "Zinnia enana rosa",
     "precio": "550",
     "foto": "Zinnia.jpeg",
     "descripcion": "Semiesfera de 2,5cm de diámetro con Zinnia enana rosada"
 },
 {
     "id": 2,
-    "Nombre": "Dije Alisso",
+    "nombre": "Dije Alisso",
     "precio": 420,
     "foto": "Alisso.jpeg",
     "descripcion": "Inflorescencia de Alisso blanco Diámetro 3,2cm"
 },
 {
     "id": 3,
-    "Nombre": "Viola amarilla",
+    "nombre": "Viola amarilla",
     "precio": 420,
     "foto": "Viola.jpeg",
     "descripcion": "Semiesfera de Viola amarilla Medida 2,5cm diámetro"
 },
 {
     "id": 4,
-    "Nombre": "Faroles Chinos",
+    "nombre": "Faroles Chinos",
     "precio": 700,
     "foto": "Faroles.jpeg",
     "descripcion": "Flores de Farolito Chino, los ganchos NO son de acero,Medidas de flor: 4,5 *2,3cm"
 },
 {
     "id": 5,
-    "Nombre": "Petalos de Abutilon",
+    "nombre": "Petalos de Abutilon",
     "precio": 750,
     "foto": "Petalos.jpeg",
     "descripcion": "Con argollas de acero,Medida por pétalo: 2,5*3cm"

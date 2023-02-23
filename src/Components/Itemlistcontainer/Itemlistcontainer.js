@@ -1,22 +1,21 @@
-import { useEffect } from 'react';
-import productos from "../../productos.json"
+
+import { useEffect, useState } from 'react';
+import ItemList from '../ItemList/ItemList';
+
 
 const Itemlistcontainer = () => { 
+const[items, setItems] = useState([])
 
-
-        useEffect(() => {
-                new Promise((resolve, reject) => {
-
-                        setTimeout(() => {
-                                resolve(productos);
-                        }, 500);
-
-                }).then((data) => {
-                        console.log(data);
-                        
-                });
-                
-        }, []);
+useEffect(()=>{
+        fetch('../productos.json')
+        .then((res)=>res.json())
+        .then((data)=> setItems(data))
+},[])
+return(
+<>
+<ItemList items={items}/>
+</>
+)
 };
 
 

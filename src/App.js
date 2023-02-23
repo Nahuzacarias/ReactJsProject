@@ -12,19 +12,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-
         <Barradetareas />
         <Itemlistcontainer/>
-
-
-
         <Routes>
-
         <Route path='/about' element={<About />} />
         <Route path='/inicio' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
-          <Route part='/detail:id' element={<CharacterDetail/>} />
-
+          <Route path='/detail/:id' element={<CharacterDetail />} />
         </Routes>
       </div>
 

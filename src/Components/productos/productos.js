@@ -3,6 +3,7 @@ import React from 'react'
 const productos = (id, nombre, precio, foto, descripcion) => {
     return (
         <div>
+        
             <p>{id}</p>
             <p>{nombre}</p>
             <p>{precio}</p>
