@@ -1,9 +1,12 @@
 import React from 'react'
-
-import Itemlistcontainer from '../../CharacterList/CharacterList';
+import CharacterCard from '../../CharacterCard/CharacterCard';
 
 const Home = () => {
-  <Itemlistcontainer/>
+
+  return(
+  
+  <CharacterCard/>
+  );
 }
 
 export default Home
