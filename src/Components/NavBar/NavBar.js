@@ -22,6 +22,7 @@ function Barradetareas() {
                     <Nav className="me-auto">
                     <Link to="/inicio" ClassName="LinK"  >INICIO</Link>
                         <Link to="/about" ClassName="LinK"  >ACERCA DE NOSOTROS</Link>
+                        <Link to="/detail" ClassName="LinK"  >Detail</Link>
                         <NavDropdown title="CATEGORÍAS" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">AROS</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.1">DIJES</NavDropdown.Item>

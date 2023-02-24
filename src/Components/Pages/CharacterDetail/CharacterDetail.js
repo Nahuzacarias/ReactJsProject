@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import CharacterCard from "../../CharacterCard/CharacterCard"
+import Item from "../../Item/Item";
 
 
 const CharacterDetail = () => {
@@ -20,7 +20,7 @@ const CharacterDetail = () => {
     return (
         <div className="characterList-detail">
             <div key={user.id}>
-                <CharacterCard data={user} />
+                <Item data={user} />
             </div>
         </div>
     );

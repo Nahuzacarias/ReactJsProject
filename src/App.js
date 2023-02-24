@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./Components/Pages/Home/Home"
 import Contact from "./Components/Pages/Contact/Contact"
 import About from "./Components/Pages/About/About"
-import CharacterDetail from './Components/Pages/CharacterDetail/CharacterDetail';
+import Item from './Components/Item/Item';
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/inicio' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/detail/:id' element={<CharacterDetail />} />
+          <Route path='/detail/:id' element={<Item />} />
         </Routes>
       </div>
 
